@@ -29,7 +29,7 @@ const LucknowSuperGiants = () => {
                 <img className='img-fluid me-5 p-1' src="https://documents.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png" alt="" height={80} width={80}/>
                 <h2 className='ms-5'>TATA IPL 2024 - LUCKNOW SUPER GIANTS (LSG)</h2>
                 <div className="d-flex flex-wrap justify-content-around align-items-center">
-                    <button className='btn btn-light ms-4'><a className='text-decoration-none text-dark' href="#">Home</a></button>
+                    <button className='btn btn-light ms-4'>Home</button>
                     <button className='btn btn-light ms-4'><a className='text-decoration-none text-dark' href="https://www.lucknowsupergiants.in/" target='_blank'>Official Team Site 
                     <svg className='ms-2' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
@@ -119,7 +119,7 @@ const LucknowSuperGiants = () => {
             let {playerID, playerName, playerImg, playerRole, playerRoleSVG} = cPlayer;
             return (
                 <div className="card bg-light m-3" style={{width:"20%"}} key={playerID}>
-                    <h5 className="card-header text-center fw-bold p-3">Player Details</h5>
+                    <h5 className="card-header text-center text-light fw-bold p-3 team-lsg-header">Player Details</h5>
                     <div className="d-flex justify-content-center">
                         <img src={playerImg} className='card-img-top mt-2' alt="" style={{ width: "80%", height: "auto" }} />
                     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Mi from './mi';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import './Style.css'
 
 const MumbaiIndians = () => {
     const [mi, setMi] = useState(Mi);
@@ -144,8 +145,8 @@ const MumbaiIndians = () => {
           mi.map((cPlayer) => {
             let {playerID, playerName, playerImg, playerRole, playerRoleSVG} = cPlayer;
             return (
-                <div className="card bg-light m-3" style={{width:"20%"}} key={playerID}>
-                    <h5 className="card-header text-center fw-bold p-3">Player Details</h5>
+                <div className="card bg-light m-3 " style={{width:"20%"}} key={playerID}>
+                    <h5 className="card-header text-center text-light fw-bold p-3 team-mi-header">Player Details</h5>
                     <div className="d-flex justify-content-center">
                         <img src={playerImg} className='card-img-top mt-2' alt="" style={{ width: "80%", height: "auto" }} />
                     </div>
